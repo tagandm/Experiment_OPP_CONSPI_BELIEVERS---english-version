@@ -674,11 +674,10 @@ var prolific = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus: "<p class='instructions'>You have finished the last task. Thanks for participating!</p>"+
   "<p class='instructions'>Please wait a moment, you will automatically be redirected to prolific.</p>",
-trial_duration: 3000,
   trial_duration: 3000,
   choices: "NO_KEYS",
   on_finish: function(){
-  window.location.href = "https://app.prolific.co/submissions/complete?cc=XXXXXX";
+  window.location.href = "https://app.prolific.com/submissions/complete?cc=CRLNJ9EJ";
   }
 }
 var prolific_id = jsPsych.data.getURLVariable('PROLIFIC_PID');
