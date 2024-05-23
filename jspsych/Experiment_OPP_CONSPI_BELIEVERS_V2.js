@@ -30,7 +30,7 @@ var welcome = {
   type: jsPsychHtmlButtonResponse,
   stimulus:
   "<p class='instructions'>Dear participant,</p>" +
-  "<p class='instructions'>This study should take about XX minutes to complete. It's important that you do the study in single session and do not do any Internet searches during the task.</p>" +
+  "<p class='instructions'>This study should take about 20 minutes to complete. It's important that you do the study in single session and do not do any Internet searches during the task.</p>" +
   "<p class='instructions'>You may stop the study at any time. Your answers are anonymous and confidential. " +
   "We are only interested in the statistical trends of the responses, and we will not be able to, nor willing to, identify participants. </p>" +
   "<p class='instructions'>By clicking on \u0022Continue\u0022, you give your consent to participate in this study.</p>",
@@ -717,7 +717,6 @@ timeline.push
   cmq_questionnary,
   cms_questionnary,
   sicbs_questionnary,
-  questionnary,
   instruction_demographic_questionnary,
   genre,
   age,
