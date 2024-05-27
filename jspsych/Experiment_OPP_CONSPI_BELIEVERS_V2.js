@@ -30,11 +30,11 @@ var welcome = {
   type: jsPsychHtmlButtonResponse,
   stimulus:
   "<p class='instructions'>Dear participant,</p>" +
-  "<p class='instructions'>This study should take about 20 minutes to complete. It's important that you do the study in single session and do not do any Internet searches during the task.</p>" +
+  "<p class='instructions'>This study should take about 15 minutes to complete. It is important that you complete the study in one setting and do not search any information on the Internet during the task.</p>" +
   "<p class='instructions'>You may stop the study at any time. Your answers are anonymous and confidential. " +
   "We are only interested in the statistical trends of the responses, and we will not be able to, nor willing to, identify participants. </p>" +
-  "<p class='instructions'>By clicking on \u0022Continue\u0022, you give your consent to participate in this study.</p>",
-  choices: ['Continuer']
+  "<p class='instructions'>By clicking on \u0022Continue\u0022, you consent to participate in this study.</p>",
+  choices: ['Continue']
 };
 
 //Instruction Scenario Attention event et non events
@@ -52,14 +52,14 @@ var scenario = [
  {number: "1",
   name: "tabacco",
   en_name: "tabacco",
-  scenario: "A tobacco company conducted laboratory studies to investigate the effects of tobacco on health. These studies revealed the carcinogenic nature of tobacco. Despite these findings, the company and other tobacco industries publicly denied these scientific findings. Instead, they promoted the false benefits of tobacco through misleading advertisements endorsed by doctors.",
+  scenario: "A tobacco company conducted laboratory studies to investigate the effects of tobacco on health. These studies revealed the carcinogenic nature of tobacco. Nonetheless, the company and other tobacco industries publicly denied these scientific findings. Instead, they promoted the false benefits of tobacco through misleading advertisements endorsed by doctors.",
   conspiracy: true,
   date: "2013"},
 
   {number: "2",
   name: "snowden",
   en_name: "snowden",
-  scenario: "The US and UK governments employed mass surveillance programs to access citizens' smartphone data, including contacts, texts, phone conversations, GPS coordinates, and Internet connection data. These practices were based on agreements between major companies such as Apple, Facebook, Google and Microsoft, and national security agencies.",
+  scenario: "The US and UK governments employed mass surveillance programs to access citizens' smartphone data, including contacts, text messages, phone conversations, GPS coordinates, and Internet connection data. These practices were based on agreements between major companies such as Apple, Facebook, Google and Microsoft, and national security agencies.",
   conspiracy: true,
   date: "2013"},
   
@@ -101,7 +101,7 @@ var scenario = [
   {number: "8",
   name: "adm_Irak",
   en_name: "adm_Irak",
-  scenario: "The US government provided false evidence of the presence of weapons of mass destruction (including nuclear, chemical, and biological weapons) to justify a military intervention in Iraq.",
+  scenario: "The US government provided false evidence of the presence of mass destruction weapons (including nuclear, chemical, and biological weapons) to justify a military intervention in Iraq.",
   conspiracy: true,
   date: "2003"},
    
@@ -115,21 +115,21 @@ var scenario = [
   {number: "10",
   name: "panama",
   en_name: "panama",
-  scenario: "The leaders of several European countries, including Russia, Ukraine, and Iceland, have been implicated in concealing financial activities through the use of shell companies, often for purposes of tax evasion.",
+  scenario: "The leaders of several European countries, including Russia, Ukraine, and Iceland, have been implicated in concealing financial activities through the use of shell companies, often for tax evasion purposes.",
   conspiracy: true,
   date: "2016"},
   
   {number: "11",
   name: "cambridge_analytica",
   en_name: "cambridge_analytica",
-  scenario: "A British political consulting firm illegally obtained and exploited personal data from social network users for the purposes of political manipulation and influence. The data was used to create psychological and behavioural profiles for personalized political advertisements during the Brexit debates.",
+  scenario: "A British political consulting firm illegally obtained and exploited personal data from social network users for political manipulation and influence purposes. The data were used to create psychological and behavioral profiles for personalized political advertisements during the Brexit debates.",
   conspiracy: true,
   date: "2016"},
    
   {number: "12",
   name: "hacking_team",
   en_name: "hacking_team",
-  scenario: "An Italian cybersecurity company has emerged specializing in the development and sale of surveillance software to governments and intelligence services in countries such as Saudi Arabia, Egypt, the United Arab Emirates, Morocco, Sudan and Kazakhstan.",
+  scenario: "An Italian cybersecurity company turned out to specialize in the development and sale of surveillance software to governments and intelligence services in countries such as Saudi Arabia, Egypt, the United Arab Emirates, Morocco, Sudan and Kazakhstan.",
   conspiracy: true,
   date: "2015"},
    
@@ -143,28 +143,28 @@ var scenario = [
   {number: "14",
   name: "tonkin",
   en_name: "tonkin",
-  scenario: "To justify military escalation in the Vietnam War, the US administration claimed that US warships had been attacked by the North Vietnamese navy. These attacks never actually took place.",
+  scenario: "To justify military escalation in the Vietnam War, the US administration claimed that US warships had been attacked by the North Vietnamese navy. Actually, these attacks never took place.",
   conspiracy: true,
   date: "1964"},
    
   {number: "15",
   name: "tuskeegee",
   en_name: "tuskeegee",
-  scenario: "In a series of studies designed to understand the natural evolution of syphilis, the US Public Health Service and one of its universities hid their diagnosis from African-American men and led them to believe they were receiving medical care for their health problems, when, in fact, they were left untreated, even after the discovery of an effective cure.",
+  scenario: "In a series of studies designed to understand the natural evolution of syphilis, the US Public Health Service and one of its universities concealed their diagnosis from African-American men and made them believe that they were receiving medical care for their condition, when, in fact, these men were left untreated even after the discovery of an effective cure.",
   conspiracy: true,
   date: "1950"},
    
   {number: "16",
   name: "lavon",
   en_name: "lavon",
-  scenario: "Israeli intelligence services attempted to carry out a bomb attack on Western facilities in Egypt and pass it off as attacks by Egyptian extremists. The aim was to discredit the Egyptian government and encourage Western countries to maintain their support for Israel.",
+  scenario: "Israeli intelligence services attempted to carry out a bomb attack on Western facilities in Egypt and to pass it off as attack by Egyptian extremists. The aim was to discredit the Egyptian government and encourage Western countries to maintain their support for Israel.",
   conspiracy: true,
   date: "1960"},
    
   {number: "17",
   name: "ajax",
   en_name: "ajax",
-  scenario: "American and British intelligence services orchestrated clandestine actions, propaganda, demonstrations, and political manipulation to foster a coup d'état against the Iranian prime minister, who sought to nationalize the country's oil industry. Their aim was to preserve their economic and geopolitical interests in Iran.",
+  scenario: "American and British intelligence services orchestrated clandestine actions, propaganda, demonstrations, and political manipulation to foster a coup d'état against the Iranian prime minister who sought to nationalize the country's oil industry. Their aim was to preserve their economic and geopolitical interests in Iran.",
   conspiracy: true,
   date: "1953"},
    
@@ -185,21 +185,21 @@ var scenario = [
   {number: "20",
   name: "hormone",
   en_name: "hormone",
-  scenario: "Growth hormones contaminated with brain-damaging substances were marketed even though French laboratories and health authorities were aware of the contamination risks. The pharmaceutical companies marketing them chose to withhold information on the contamination for financial reasons.",
+  scenario: "Growth hormones contaminated with brain-damaging substances were marketed even though French laboratories and health authorities were aware of the contamination risks. The pharmaceutical companies marketing them chose to withhold contamination information for financial reasons.",
   conspiracy: true,
   date: "1980"},
    
   {number: "21",
   name: "indus_sucre",
   en_name: "sugar_indus",
-  scenario: "The sugar industry funded research aimed at minimizing the links between sugar and health problems. These studies were designed to emphasize other factors, such as saturated fats, as primary contributors to heart disease.",
+  scenario: "The sugar industry funded research that aimed at minimizing the links between sugar and health problems. These studies were designed to emphasize other factors, such as saturated fats, as primary risk factors for heart disease.",
   conspiracy: true,
   date: "1960"},
   
   {number: "22",
   name: "indus_climat",
   en_name: "climat_indus",
-  scenario: "Some major oil companies undertook disinformation campaigns to sow doubt about the reality of climate change and the role of fossil fuels in it. These companies deliberately downplayed the effects of climate change and exerted pressure to block policies combating global warming.",
+  scenario: "Some major oil companies undertook disinformation campaigns to sow doubt about the reality of climate change and the underlying role of fossil fuels. These companies deliberately downplayed the effects of climate change and exerted pressure to block policies combating global warming.",
   conspiracy: true,
   date: "1960-2010"},
   
@@ -241,21 +241,21 @@ var scenario = [
   {number: "28",
   name: "somme",
   en_name: "paris_river",
-  scenario: "The technical services of the French state deliberately triggered the flooding of a valley upstream from Paris. This action resulted in significant material damage to local populations, done in favour of protecting the capital, which was also threatened by rising waters.",
+  scenario: "The technical services of the French state deliberately triggered the flooding of a valley upstream from Paris. This action resulted in significant material damage to local populations, done in favor of protecting the capital, which was also threatened by rising waters.",
   conspiracy: false,
   date: "2001"},
   
   {number: "29",
   name: "kennedy",
   en_name: "kennedy",
-  scenario: "US intelligence services orchestrated the assassination of a US president due to disagreements with him, particularly regarding military operations.",
+  scenario: "The US intelligence services orchestrated the assassination of a US president due to disagreements with him, particularly regarding military operations.",
   conspiracy: false,
   date: "NA"},
   
   {number: "30",
   name: "grand_remp",
   en_name: "great_rep",
-  scenario: "Some European politicians and intellectuals are encouraging and planning the replacement of European population by people from Africa, with the aim —among others— to destroy white European identities.",
+  scenario: "Some European politicians and intellectuals are encouraging and planning the replacement of European population by people from Africa, with the aim —among others— of destroying white European identities.",
   conspiracy: false,
   date: "NA"},
    
@@ -276,7 +276,7 @@ var scenario = [
   {number: "33",
   name: "cgmt_cl",
   en_name: "climate_change",
-  scenario: "Governments and companies invent data on climate change and used them to justify implementing new taxes and regulations, and exert greater control over the economy.",
+  scenario: "Governments and companies create data on climate change and use them to justify implementing new taxes and regulations, and exert greater control over the economy.",
   conspiracy: false,
   date: "NA"},
    
@@ -290,7 +290,7 @@ var scenario = [
   {number: "35",
   name: "ben_laden",
   en_name: "ben_laden",
-  scenario: "The US secret services orchestrated the arrest and reported death of Osama bin Laden, the founder of Al Qaeda who actually died several years earlier. This media maneuvers aimed at bolstering the popularity of the incumbent president.",
+  scenario: "The US secret services orchestrated the arrest and reported death of Osama bin Laden, the founder of Al Qaeda who actually died several years earlier. This media maneuver aimed at bolstering the popularity of the incumbent president.",
   conspiracy: false,
   date: "2011"},
   
@@ -311,28 +311,28 @@ var scenario = [
   {number: "38",
   name: "11_sept",
   en_name: "sept_11th",
-  scenario: "Despite being aware of the preparation of a terrorist attack by Al-Qaeda, the US government allowed events to unfold to justify military interventions in the Middle East to protect its financial interests.",
+  scenario: "Despite being aware of the preparation of a terrorist attack by Al-Qaeda, the US government allowed events to unfold in order to justify military interventions in the Middle East and thus to defend its financial interests.",
   conspiracy: false,
   date: "2001"},
    
   {number: "39",
   name: "avion",
   en_name: "plane",
-  scenario: "The plane crash, which resulted in the deaths of the former Polish prime minister and many other government members, was organized by the political opposition with the assistance of Russian agents.",
+  scenario: "The plane crash which resulted in the deaths of the former Polish prime minister and many other government members was organized by the political opposition with the assistance of Russian agents.",
   conspiracy: false,
   date: "2014"},
    
   {number: "40",
   name: "haarp",
   en_name: "haarp",
-  scenario: "The US government possesses secret technology enabling it to manipulate weather conditions and induce natural disasters such as storms and cyclones. It uses this technology to create crises and manipulate the media agenda and migratory flows.",
+  scenario: "The US government has access to secret technology enabling it to manipulate weather conditions and induce natural disasters such as storms and cyclones. It uses this technology to create crises and manipulate the media agenda and migratory flows.",
   conspiracy: false,
   date: "NA"},
    
   {number: "41",
   name: "hydroxychloroquine",
   en_name: "hydroxychloroquine",
-  scenario: "The French government has refused to recommend hydroxychloroquine, which is effective against COVID-19, as a treatment, to allow pharmaceutical companies to develop vaccines that are more lucrative.",
+  scenario: "Albeit being effective against COVID-19, the French government refused to recommend hydroxychloroquine as a treatment to allow pharmaceutical companies to develop vaccines that are more lucrative.",
   conspiracy: false,
   date: "2020"},
    
@@ -346,7 +346,7 @@ var scenario = [
   {number: "43",
   name: "vaccin_hepatite_B",
   en_name: "hepatite_B_vaccine",
-  scenario: "Certain scientists have been bribed by pharmaceutical companies to manipulate data and conceal the fact that the hepatitis B vaccine could foster the development of multiple sclerosis.",
+  scenario: "Some scientists have been bribed by pharmaceutical companies to manipulate data and conceal the fact that the hepatitis B vaccine could foster the development of multiple sclerosis.",
   conspiracy: false,
   date: "1990"},
    
@@ -360,14 +360,14 @@ var scenario = [
   {number: "45",
   name: "ogm",
   en_name: "gmo",
-  scenario: "Certain agri-food companies driven by economic motives continued to market GMOs (genetically modified organisms) after the publication of a scientific report demonstrating they were dangerous.",
+  scenario: "Some agri-food companies driven by economic motives continued to market GMOs (genetically modified organisms) after the publication of a scientific report demonstrating their harmfulness.",
   conspiracy: false,
   date: "NA"},
   
   {number: "46",
   name: "loterie",
   en_name: "lottery",
-  scenario: "Certain governments and secret groups manipulate and rig winning lottery numbers to prevent individuals with modest incomes from becoming wealthy, and to take some of the population's money.",
+  scenario: "Some governments and secret groups manipulate and rig winning lottery numbers to prevent individuals with modest incomes from becoming wealthy and to take some of the population's money.",
   conspiracy: false,
   date: "NA"},
   
@@ -388,14 +388,14 @@ var scenario = [
   {number: "49",
   name: "juif",
   en_name: "jew",
-  scenario: "Jewish intellectuals, politicians, and businessmen control governments, media and financial institutions to further the interests of the Jewish community.",
+  scenario: "Jewish intellectuals, politicians, and businessmen control governments, media and financial institutions to foster the interests of the Jewish community.",
   conspiracy: false,
   date: "NA"},
    
   {number: "50",
   name: "lady_diana",
   en_name: "lady_diana",
-  scenario: "At the request of the royal family, the British intelligence services murdered a Princess of Wales, making it appear as a car accident.",
+  scenario: "At the request of the royal family, the British intelligence services murdered a Princess of Wales, making it seem like a car accident.",
   conspiracy: false,
   date: "1997"},
   
@@ -482,7 +482,7 @@ var cmq_label = [
 var cmq_questionnary = {
   type: jsPsychSurveyLikert,
   preamble:
-  "<p class='instructions_questionnary'>For each of the statements below, please choose the appropriate number to indicate the extent to which you think these statements are true.</br></p>"+ 
+  "<p class='instructions_questionnary'>For each statement below, please choose the appropriate number to indicate the extent to which you think these statements are true.</br></p>"+ 
   "<p class='instructions_questionnary'>There is no objectively true or false answer, we are interested in your personal opinions.</p>"+
   "<p class='instructions_questionnary'>I think that...",
   questions: [
@@ -510,7 +510,7 @@ var cms_label = [
 var cms_questionnary = {
   type: jsPsychSurveyLikert,
   preamble:
-  "<p class='instructions_questionnary'>For each of the statements below, please choose the appropriate number to indicate the extent to which you think these statements are true.</br></p>"+ 
+  "<p class='instructions_questionnary'>For each statement below, please choose the appropriate number to indicate the extent to which you think these statements are true.</br></p>"+ 
   "<p class='instructions_questionnary'>There is no objectively true or false answer, we are interested in your personal opinions.</p>",
   questions: [
        {prompt: "There are many very important things happening in the world about which the public is not informed.", name: 'cms_1', labels: cms_label, required: true},
@@ -564,7 +564,7 @@ var sicbs_questionnary = {
 var instruction_demographic_questionnary = {
   type: jsPsychHtmlButtonResponse,
   stimulus:
-  "<p class='instructions_questionnary'>You have almost completed the study. Please answer these last questions.</p>",
+  "<p class='instructions_questionnary'>You are almost finished with the study. Please answer these last questions.</p>",
   choices: ['Continue']
 }
           
@@ -587,7 +587,7 @@ var age = {
   type: jsPsychSurveyText,
   questions: [
     {
-      prompt: "<p class='instructions_questionnary'>How old are you? (in year, just a number, for instance 32)</p>",
+      prompt: "<p class='instructions_questionnary'>How old are you? (in years, just a number, for instance 32)</p>",
       placeholder: 'XX',
       name: 'age',
       required: true
@@ -620,7 +620,7 @@ var political_label = [
 var interest_questionnary = {
   type: jsPsychSurveyLikert,
   preamble:
-  "<p class='instructions_questionnary'>Please answer on the following statements:</p>",
+  "<p class='instructions_questionnary'>Please answer the following statements:</p>",
   questions: [
        {prompt: "I'm interested in political and geopolitical news.", name: 'geopolitical', labels: interest_label, required: true},
        {prompt: "I'm interested in history.", name: 'histoire', labels: interest_label, required: true},
@@ -634,8 +634,8 @@ var search_check = {
   type: jsPsychSurveyMultiSelect,
   questions: [
     {
-      prompt: "<p class='instructions_questionnary'>Did you do any Internet searches during the task?</p>" +
-      "<p class='instructions_questionnary'>Please answer this question honestly, and we assure you that your answer will have no impact on your remuneration.</p>", 
+      prompt: "<p class='instructions_questionnary'>Did you research any of the events on the Internet during the task?</p>" +
+      "<p class='instructions_questionnary'>Please answer this question honestly. We assure you that your answer will have no impact on your remuneration.</p>", 
       options: ["yes", "no"],
       name: 'research_check',
       required: true,
@@ -662,7 +662,7 @@ var comment = {
 var waiting_demand = {
   type: jsPsychHtmlButtonResponse,
   stimulus:
-  "<p class='instructions'>You have now finished answering all the questions. " +
+  "<p class='instructions'>You are now finished with the questions. " +
   "After clicking continue, the data will be saved while loading. " +
   "Please wait until the next page appears to exit. " +
   "Otherwise, we will have no proof that you have completed the study.</p>",
@@ -672,7 +672,7 @@ var waiting_demand = {
 //prolific ----------------------------------------------------------------------------------
 var prolific = {
   type: jsPsychHtmlKeyboardResponse,
-  stimulus: "<p class='instructions'>You have finished the last task. Thanks for participating!</p>"+
+  stimulus: "<p class='instructions'>You are finished with the last task. Thanks for participating!</p>"+
   "<p class='instructions'>Please wait a moment, you will automatically be redirected to prolific.</p>",
   trial_duration: 3000,
   choices: "NO_KEYS",
