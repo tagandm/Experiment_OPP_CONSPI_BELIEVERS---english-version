@@ -433,7 +433,7 @@ var scenario_categorization = {
 var scenario_procedure = {
   timeline: [scenario_categorization],
   timeline_variables: scenario,
-  randomize_order: false,
+  randomize_order: true,
     data: {
       number: jsPsych.timelineVariable('number'),
       name: jsPsych.timelineVariable('name'),
@@ -558,6 +558,18 @@ var sicbs_questionnary = {
       required: true
     }
   ]
+}
+
+var order_questionnary_randomization = jsPsych.randomization.sampleWithoutReplacement(["sicbs_first", "cms_first"], 1)[0];
+
+var questionnary = {
+  timeline: (function(){
+    if (order_questionnary_randomization == "sicbs_first"){
+      return [sicbs_questionnary, cms_questionnary]
+    } else {
+      return [cms_questionnary, sicbs_questionnary]
+    }
+  })()
 }
 
 /// Demographic Questions
@@ -694,7 +706,8 @@ jsPsych.data.addProperties({
   prolific_id: prolific_id,
   study_id: study_id,
   session_id: session_id,
-  true_side: true_side
+  true_side: true_side,
+  order_questionnary_randomization: order_questionnary_randomization
 })
 
 var save_data = {
@@ -714,8 +727,7 @@ timeline.push
   instruction_questionnary,
   attention_check,
   cmq_questionnary,
-  cms_questionnary,
-  sicbs_questionnary,
+  questionnary,
   instruction_demographic_questionnary,
   genre,
   age,
