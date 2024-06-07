@@ -30,7 +30,7 @@ var welcome = {
   type: jsPsychHtmlButtonResponse,
   stimulus:
   "<p class='instructions'>Dear participant,</p>" +
-  "<p class='instructions'>This study should take about 15 minutes to complete. It is important that you complete the study in one setting and do not search any information on the Internet during the task.</p>" +
+  "<p class='instructions'>This study should take about 15 minutes to complete. It is important that you complete the study in one sitting and do not search any information on the Internet during the task.</p>" +
   "<p class='instructions'>You may stop the study at any time. Your answers are anonymous and confidential. " +
   "We are only interested in the statistical trends of the responses, and we will not be able to, nor willing to, identify participants. </p>" +
   "<p class='instructions'>By clicking on \u0022Continue\u0022, you consent to participate in this study.</p>",
@@ -290,7 +290,7 @@ var scenario = [
   {number: "35",
   name: "ben_laden",
   en_name: "ben_laden",
-  scenario: "The US secret services orchestrated the arrest and reported death of Osama bin Laden, the founder of Al Qaeda who actually died several years earlier. This media maneuver aimed at bolstering the popularity of the incumbent president.",
+  scenario: "The US secret services orchestrated the arrest and reported the death of Osama bin Laden, the founder of Al Qaeda who actually died several years earlier. This media maneuver aimed at bolstering the popularity of the incumbent president.",
   conspiracy: false,
   date: "2011"},
   
