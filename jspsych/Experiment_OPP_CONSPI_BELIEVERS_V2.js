@@ -515,7 +515,7 @@ var cms_questionnary = {
   questions: [
        {prompt: "There are many very important things happening in the world about which the public is not informed.", name: 'cms_1', labels: cms_label, required: true},
        {prompt: "Those at the top do whatever they want.", name: 'cms_2', labels: cms_label, required: true},
-       {prompt: "A few powerful groups of people determine the destiny of millions.", name: 'cmq_3', labels: cms_label, required: true},
+       {prompt: "A few powerful groups of people determine the destiny of millions.", name: 'cms_3', labels: cms_label, required: true},
        {prompt: "There are secret organizations that have great influence on political decisions.", name: 'cms_4', labels: cms_label, required: true},
        {prompt: "I think that the various conspiracy theories circulating in the media are absolute nonsense.", name: 'cms_5R', labels: cms_label, required: true},
        {prompt: "Politicians and other leaders are nothing but the string puppets of powers operating in the background.", name: 'cms_6', labels: cms_label, required: true},
